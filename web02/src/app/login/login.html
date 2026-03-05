@@ -1,0 +1,23 @@
+<h3>Login</h3>
+Para acessar sua conta realize o login:
+<br><br>
+<div class="login-container">
+    <form>
+        <div class="login-row">
+           Email: <input type="email" id="email">
+        </div>
+        <br>
+        <div class="login-row">
+            Senha: <input type="password" id="senha">
+        </div>
+        <br>
+        <input type="checkbox" id="lembrar">Lembrar-me 
+        <br><br>
+        <div class="login-row">
+            <button (click)="entrar()">Entrar</button>
+        </div>
+        <div class="login-row">
+            <h4>{{saudacao}}</h4>
+        </div>
+    </form>
+</div>
