@@ -1,1 +1,9 @@
-<p>vitrine works!</p>
+<h1>Vitrine</h1>
+<div *ngFor="let obj of lista">
+    <h4>{{obj.nome}}</h4>
+    <img src="img{{obj.codigo}}.jpg" width="100px"><br>
+    <div *ngIf="obj.promo>=obj.valor">por: R$ {{obj.valor}}</div>
+    <div *ngIf="obj.promo<=obj.valor">de: R$ {{obj.valor}}<br>por: R$ {{obj.promo}}</div><br>
+    <button *ngIf="obj.quantidade>0">Comprar</button>
+    <h4 *ngIf="obj.quantidade<=0">Sem estoque</h4>
+</div>
